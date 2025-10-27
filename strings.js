@@ -8,11 +8,11 @@ console.log(a[2])
 console.log(a[3])
 console.log(a[4])
 
-console.log(hiii"nehaaa")
+console.log(hiii,"nehaaa")
 
 let name="neh"
 let friend="dog"
-console.log(name is $(name) friend is $(friend))  
+console.log(`name is $(name) friend is $(friend)`)  
 // above both single and double quotes csn be used
 console.log("name is" +name+ "friend is" +friend)
 
