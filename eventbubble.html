@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+            background-color: burlywood;
+            padding: 14px;
+            border:2px solid black;
+            margin: 14px;
+
+        }
+        .childContainer{
+            background-color: rgb(144, 135, 222);
+            padding: 14px;
+            border:2px solid black;
+            margin: 14px;
+        }
+        .container{
+            background-color: rgb(222, 135, 193);
+            padding: 14px;
+            border:2px solid black;
+            margin: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- imp in interview -->
+     <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                i am child
+            </div>
+        </section>
+     </div>
+     <script>
+        document.querySelector(".child").addEventListener("click",()=>{
+            alert("child clicked")
+        })
+         document.querySelector(".childContainer").addEventListener("click",()=>{
+            alert("childContainer clicked")
+        })
+         document.querySelector(".container").addEventListener("click",()=>{
+            alert("Container clicked")
+        })
+     </script>
+</body>
+</html>
