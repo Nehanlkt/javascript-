@@ -15,4 +15,3 @@ bttn.addEventListener("contextmenu",()=>{
 })
 
 
-
