@@ -38,11 +38,15 @@ calculator(1,2,sum);
 
 // clback hell:nested clback started below one another form pyramid of doom
 function getData(dataId){
-    console.log("data",dataId)
+    setTimeout(()=>{
+    console.log("data",dataId);
+},2000);
 }
 getData(1);
 getData(2);
 getData(3);
+// all this data excute @once after 2 sec as timer start together n result comes together
+
 
 
 
