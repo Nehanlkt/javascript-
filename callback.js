@@ -47,8 +47,7 @@ getData(2);
 getData(3);
 // all this data excute @once after 2 sec as timer start together n result comes together
 
-
-
+// to get one after other we use clback here its getnextdata
 
 
 
