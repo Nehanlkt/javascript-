@@ -36,7 +36,13 @@ function calculator(a,b,sumcl){
 
 calculator(1,2,sum);
 
-
+// clback hell:nested clback started below one another form pyramid of doom
+function getData(dataId){
+    console.log("data",dataId)
+}
+getData(1);
+getData(2);
+getData(3);
 
 
 
