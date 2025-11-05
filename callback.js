@@ -61,8 +61,11 @@ function getData(dataId, getnextdata) {
 
     }, 2000);
 }
+// clbck hell
 getData(1, () => {
+    console.log("getting data2");
     getData(2, () => {
+        console.log("getting data3");
         getData(3);
     });
 
