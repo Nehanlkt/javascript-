@@ -14,3 +14,4 @@ let promise = new Promise((resolve, reject) => {
 });
 
 // need to do
+// need to do css exercises also
