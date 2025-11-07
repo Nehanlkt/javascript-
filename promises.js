@@ -28,6 +28,20 @@
 // });
 // }
 
+
+// chain for this
+// getdata(1)
+//     .then((res) => {
+        //    console.log("getting data2")
+//         return getdata(2);
+//     })
+//     .then((res) => {
+//         return getdata(3);
+//     })
+//     .then((res) => {
+//         console.log(res);
+//     });
+
 // these promises r given by api
 // now we have to see how to use these problems
 // uses by .then() for resolved & .catch()
@@ -51,39 +65,54 @@
 // )
 
 // promise Chaain
-function asyncFunc1 () {
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
+function asyncFunc1() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
             console.log("data1");
             resolve("sucess");
-        },4000);
+        }, 4000);
     });
-    
+
 }
 function asyncFunc2() {
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
             console.log("data2");
             resolve("sucess");
-        },4000);
+        }, 4000);
     });
-    
+
 }
 
 console.log("fetching data1....");
-let p1=asyncFunc1();
-p1.then((res)=>{
+let p1 = asyncFunc1();
+p1.then((res) => {
     console.log(res);
+    console.log("fetching data2....");
+    let p2 = asyncFunc2();
+    p2.then((res) => {
+        console.log(res);
+
+    });
 
 });
 
-console.log("fetching data2....");
-let p2=asyncFunc2();
-p1.then((res)=>{
-    console.log(res);
+// console.log("fetching data2....");
+// let p2=asyncFunc2();
+// p1.then((res)=>{
+//     console.log(res);
 
-});
+// });
 // both vl execute at a time
 
 
 // but to get one after other we use chaining
+// upper one r this
+// console.log("fetching data1....");
+//  asyncFunc1().then((res) => {
+//     console.log("fetching data2....");
+//      asyncFunc2().then((res) => {
+//         console.log(res);
+//      });
+
+
