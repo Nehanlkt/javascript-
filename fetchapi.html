@@ -1,0 +1,22 @@
+<!-- fetch api provides interface for fetching (sending/recieving)resourses -->
+ <!-- it uses request and response objects
+  fetch method is used to fetch a resouse(data) -->
+<!-- application programmig interface -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const URL="https://cat-fact.herokuapp.com/facts";
+        const getFacts=async()=>{
+        let response=fetch(URL);
+        console.log(response);
+        };
+    </script>
+</body>
+</html>
