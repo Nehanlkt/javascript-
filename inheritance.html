@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // class Parent{
+        //     hello(){
+        //         console.log("hello")
+        //     }
+        // }
+        // class Child extends Parent{}
+        // let obj=new Child();
+
+        class Person{
+            eat(){
+                console.log("eat");
+            }
+            sleep(){
+                console.log("sleep");
+            }
+        }
+
+        class Engineer extends Person{
+            work(){
+                console.log("cd");
+            }
+            hrs(){
+                console.log(10);
+            }
+        }
+        let shrObj=new Engineer();
+
+
+    </script>
+</body>
+</html>
+<!-- inheritance is passing down properties n methods from parent to child class
+ we use extend keyword
+ if child n parent have same method,child method will be used(method overloading) -->
