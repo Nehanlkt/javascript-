@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         class Person{
+            constructor(){
+                console.log("enter parent const");
+                this.species="homo sapiens"
+            }
+            eat(){
+                console.log("eat");
+            }
+        }
+         class Engineer extends Person{
+            constructor(name){
+                console.log("enter child const");
+                super();
+                this.branch=branch;
+                console.log("exit child const");
+            }
+            work(){
+                super.eat();
+                console.log("cd");
+            }
+        }
+
+        let ss=new Engineer("cg");
+    </script>
+</body>
+</html>
+<!-- super keyword is used to call constructor of its parent class  -->

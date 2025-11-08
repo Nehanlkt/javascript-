@@ -16,11 +16,17 @@
         // let obj=new Child();
 
         class Person{
+            constructor(){
+                this.species="homo sapiens"
+            }
             eat(){
                 console.log("eat");
             }
             sleep(){
                 console.log("sleep");
+            }
+            work(){
+                console.log("ntg")
             }
         }
 
@@ -32,7 +38,14 @@
                 console.log(10);
             }
         }
-        let shrObj=new Engineer();
+        class Doctor extends Person{
+            treatment(){
+                console.log("tt")
+            }
+        }
+        let shr=new Engineer(); //creating obj
+        let nnn=new Doctor();
+
 
 
     </script>
@@ -41,3 +54,6 @@
 <!-- inheritance is passing down properties n methods from parent to child class
  we use extend keyword
  if child n parent have same method,child method will be used(method overloading) -->
+<!-- multiple class can inherit same class -->
+
+
